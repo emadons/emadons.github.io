@@ -1893,7 +1893,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #5bf4e4;
+  background: #5341ff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3184,15 +3184,14 @@ img:hover {
     margin: 8px 0 0;
   }
 }
-body {
-  background: url("../images/4.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: 50% 50%;
-}
-.main-inner {
-  margin-top: 60px;
-  padding: 60px 60px 60px 60px;
-  opacity: 1;
-  min-height: 500px;
+@media screen and (min-width: 1200px) {
+  body {
+    background-image: url("../images/4.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+  }
+  #footer a {
+    color: #eee;
+  }
 }
