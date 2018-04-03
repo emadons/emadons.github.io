@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[使用Hexo&Github免费搭建个人博客]]></title>
     <url>%2F2018%2F04%2F03%2F%E4%BD%BF%E7%94%A8Hexo%26Github%E5%85%8D%E8%B4%B9%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%2F</url>
-    <content type="text"><![CDATA[这个博客也是博主昨天下午在图书馆随着“关于”页面的嵌入而搭建完毕的，至于说为什么想要搭建这个博客，其实是想通过一个网络平台来记录一下自己学习的技术，当然也有一个不可忽视的事实，就是读计算机专业的人不搞个博客玩玩都不好意思说是读计算机的了（哈哈..）恩..好了，切换到今天的正题，来说一下如何利用Hexo+Github来免费搭建个人博客。 前排提醒：搭建博客的过程中除了需要hexo和github之外，我们还需要搭建 Node.js 和Git 环境 什么是hexo?Hexo是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。 ![image][./image/hexo.png] ##什么是github? gitHub是一个面向开源及私有软件项目的托管平台，因为只支持git 作为唯一的版本库格式进行托管，故名gitHub。 ##一、github的注册与配置]]></content>
+    <content type="text"><![CDATA[这个博客也是博主昨天下午在图书馆随着“关于”页面的嵌入而搭建完毕的，至于说为什么想要搭建这个博客，其实是想通过一个网络平台来记录一下自己学习的技术，当然也有一个不可忽视的事实，就是读计算机专业的人不搞个博客玩玩都不好意思说是读计算机的了（哈哈..）恩..好了，切换到今天的正题，来说一下如何利用Hexo+Github来免费搭建个人博客。 前排提醒：搭建博客的过程中除了需要hexo和github之外，我们还需要搭建 Node.js 和Git 环境 什么是hexo?Hexo是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。 ![image][emadons.github.io/image/hexo.png ] ##什么是github? gitHub是一个面向开源及私有软件项目的托管平台，因为只支持git 作为唯一的版本库格式进行托管，故名gitHub。 ##一、github的注册与配置]]></content>
       <categories>
         <category>Hexo</category>
       </categories>
