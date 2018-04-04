@@ -96,7 +96,10 @@
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://raw.githubusercontent.com/emadons/emadons.github.io/master/doc_images/blog.jpg">
 <meta property="og:image" content="https://raw.githubusercontent.com/emadons/emadons.github.io/master/doc_images/hexo.png">
-<meta property="og:updated_time" content="2018-04-04T02:37:45.053Z">
+<meta property="og:image" content="https://i.imgur.com/56C7eap.png">
+<meta property="og:image" content="https://i.imgur.com/MadQu0D.png">
+<meta property="og:image" content="https://i.imgur.com/LZmVE1m.png">
+<meta property="og:updated_time" content="2018-04-04T05:43:05.855Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="使用Hexo&amp;Github免费搭建个人博客">
 <meta name="twitter:description" content="这个博客也是博主昨天下午在图书馆随着“关于”页面的嵌入而搭建完毕的，至于说为什么想要搭建这个博客，其实是想通过一个网络平台来记录一下自己学习的技术，当然也有一个不可忽视的事实，就是读计算机专业的人不搞个博客玩玩都不好意思说是读计算机的了（哈哈..）恩..好了，切换到今天的正题，来说一下如何利用Hexo+Github来免费搭建个人博客。">
@@ -413,7 +416,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  286 字
+                  829 字
                 </span>
               
 
@@ -429,7 +432,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  1 分钟
+                  3 分钟
                 </span>
               
             </div>
@@ -456,9 +459,21 @@
 <p><img src="https://raw.githubusercontent.com/emadons/emadons.github.io/master/doc_images/blog.jpg" alt="hexo"><br><a id="more"></a><br><strong>前排提醒：搭建博客的过程中除了需要hexo和github之外，我们还需要搭建 Node.js 和Git 环境</strong></p>
 <h2 id="什么是hexo"><a href="#什么是hexo" class="headerlink" title="什么是hexo?"></a>什么是hexo?</h2><p><img src="https://raw.githubusercontent.com/emadons/emadons.github.io/master/doc_images/hexo.png" alt="hexo"></p>
 <p><a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener">Hexo</a>是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</p>
-<p>##什么是github?</p>
-<p><a href="https://github.com/" target="_blank" rel="noopener">gitHub</a>是一个面向开源及私有软件项目的托管平台，因为只支持git 作为唯一的版本库格式进行托管，故名gitHub。</p>
-<p>##一、github的注册与配置</p>
+<h2 id="什么是github"><a href="#什么是github" class="headerlink" title="什么是github?"></a>什么是github?</h2><p><a href="https://github.com/" target="_blank" rel="noopener">gitHub</a>是一个面向开源及私有软件项目的托管平台，因为只支持git 作为唯一的版本库格式进行托管，故名gitHub。</p>
+<h2 id="一、github的注册与配置"><a href="#一、github的注册与配置" class="headerlink" title="一、github的注册与配置"></a>一、github的注册与配置</h2><h3 id="注册"><a href="#注册" class="headerlink" title="注册"></a>注册</h3><p>如果你已有github账号，那么请记住你的username，接下来要用到你的username来确定你所使用的域名。当然，如果你没有github账户的话也不用着急，花个两三分钟的时间去注册一个就好了。</p>
+<p><strong>github注册网址</strong>：<a href="https://github.com/" target="_blank" rel="noopener">https://github.com/</a></p>
+<p>打开注册页面，输入你的用户名，注册邮箱以及密码即可注册，但前提记的在你的注册邮箱中确认注册验证，不然无法使用github哦。<br><img src="https://i.imgur.com/56C7eap.png" alt="github注册"></p>
+<h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3><p>注册成功并进入主页面后，点击右上角的“+”号按钮，选择New repository，进入代码库创建页面：</p>
+<p>在Repository name下填写yourname.github.io，Description (optional)下填写一些简单的描述（不写也没有关系），如图所示：<br><img src="https://i.imgur.com/MadQu0D.png" alt="repository"></p>
+<p><strong>注意:图片中的yourname指的是你的username，比如我的username叫emadons，那么我的Repository name中就填emadons.github.io就可以了，以后通过<a href="https://emadons.github.io" target="_blank" rel="noopener">https://emadons.github.io</a>就可以登录自己的博客了。</strong></p>
+<p>点击“Create repository”后出现下面界面就可以了。<br><img src="https://i.imgur.com/LZmVE1m.png" alt=""></p>
+<h2 id="二、安装Node-js和Git环境"><a href="#二、安装Node-js和Git环境" class="headerlink" title="二、安装Node.js和Git环境"></a>二、安装Node.js和Git环境</h2><h3 id="Node-js安装"><a href="#Node-js安装" class="headerlink" title="Node.js安装"></a>Node.js安装</h3><h5 id="Node-js介绍"><a href="#Node-js介绍" class="headerlink" title="Node.js介绍"></a>Node.js介绍</h5><p>Node.js是一个Javascript运行环境(runtime)，是一个基于Chrome JavaScript运行时建立的平台， 用于方便地搭建响应速度快、易于扩展的网络应用。Node.js 使用事件驱动， 非阻塞I/O 模型而得以轻量和高效，非常适合在分布式设备上运行数据密集型的实时应用。</p>
+<p>Node中文官网：<a href="https://nodejs.org/zh-cn/" target="_blank" rel="noopener">https://nodejs.org/zh-cn/</a></p>
+<p>在官网上下载所需版本进行安装即可。具体安装教程可以在网上搜。</p>
+<h3 id="Git安装"><a href="#Git安装" class="headerlink" title="Git安装"></a>Git安装</h3><h5 id="Git介绍"><a href="#Git介绍" class="headerlink" title="Git介绍"></a>Git介绍</h5><p>Git是一款免费、开源的分布式版本控制系统，用于敏捷高效地处理任何或小或大的项目。</p>
+<p>安装Git用途其实也就是把本地的Hexo内容（既静态的Web网站）提交到github或者Coding net等其他的代码托管站点上。</p>
+<p>Git官网：<a href="https://git-scm.com/downloads" target="_blank" rel="noopener">https://git-scm.com/downloads</a></p>
+<p>由于国内直接从官网下载比较困难，需要翻墙。所以这里推荐使用waylau提供的下载地址：<a href="https://github.com/waylau/git-for-win" target="_blank" rel="noopener">https://github.com/waylau/git-for-win</a></p>
 
       
     </div>
@@ -692,7 +707,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是hexo"><span class="nav-number">1.</span> <span class="nav-text">什么是hexo?</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是hexo"><span class="nav-number">1.</span> <span class="nav-text">什么是hexo?</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是github"><span class="nav-number">2.</span> <span class="nav-text">什么是github?</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#一、github的注册与配置"><span class="nav-number">3.</span> <span class="nav-text">一、github的注册与配置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#注册"><span class="nav-number">3.1.</span> <span class="nav-text">注册</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#配置"><span class="nav-number">3.2.</span> <span class="nav-text">配置</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二、安装Node-js和Git环境"><span class="nav-number">4.</span> <span class="nav-text">二、安装Node.js和Git环境</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Node-js安装"><span class="nav-number">4.1.</span> <span class="nav-text">Node.js安装</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#Node-js介绍"><span class="nav-number">4.1.0.1.</span> <span class="nav-text">Node.js介绍</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Git安装"><span class="nav-number">4.2.</span> <span class="nav-text">Git安装</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#Git介绍"><span class="nav-number">4.2.0.1.</span> <span class="nav-text">Git介绍</span></a></li></ol></li></ol></li></ol></li></ol></div>
             
 
           </div>
@@ -735,7 +750,7 @@
     
       <span class="post-meta-item-text">博客全站字数&#58;</span>
     
-    <span title="博客全站字数">579</span>
+    <span title="博客全站字数">1.1k</span>
   
 </div>
 
