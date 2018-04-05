@@ -106,7 +106,11 @@
 <meta property="og:image" content="https://i.imgur.com/7sUfeZ2.jpg">
 <meta property="og:image" content="https://i.imgur.com/vN0A2aG.png">
 <meta property="og:image" content="https://i.imgur.com/NbxRlIk.png">
-<meta property="og:updated_time" content="2018-04-04T16:22:04.831Z">
+<meta property="og:image" content="https://i.imgur.com/5FGaL5n.png">
+<meta property="og:image" content="https://i.imgur.com/pSdIAgx.png">
+<meta property="og:image" content="https://i.imgur.com/zZmBvG3.png">
+<meta property="og:image" content="https://i.imgur.com/7NQpiyP.png">
+<meta property="og:updated_time" content="2018-04-05T16:22:09.430Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="使用Hexo&amp;Github免费搭建个人博客">
 <meta name="twitter:description" content="这个博客也是博主昨天下午在图书馆随着“关于”页面的嵌入而搭建完毕的，至于说为什么想要搭建这个博客，其实是想通过一个网络平台来记录一下自己学习的技术，当然也有一个不可忽视的事实，就是读计算机专业的人不搞个博客玩玩都不好意思说是读计算机的了（哈哈..）恩..好了，切换到今天的正题，来说一下如何利用Hexo+Github来免费搭建个人博客。">
@@ -423,7 +427,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  1,575 字
+                  2,207 字
                 </span>
               
 
@@ -439,7 +443,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  6 分钟
+                  8 分钟
                 </span>
               
             </div>
@@ -531,6 +535,44 @@
 <p>timezone–时区</p>
 </blockquote>
 <p>###配置部署(repo注意修改成自己的)<br><img src="https://i.imgur.com/NbxRlIk.png" alt=""></p>
+<h1 id="七、发表文章"><a href="#七、发表文章" class="headerlink" title="七、发表文章"></a>七、发表文章</h1><p>在CMD中输入</p>
+<blockquote>
+<p>$ hexo new “emadons的第一篇博客文章”</p>
+</blockquote>
+<blockquote>
+<p>INFO  Created: F:\test\blog\source_posts\emadons的第一篇博客文章.md</p>
+</blockquote>
+<p>然后在该路径下找到<code>emadons的第一篇博客文章.md</code>文件，用编辑器打开，使用markdown语法进行编辑，如下图：</p>
+<p><img src="https://i.imgur.com/5FGaL5n.png" alt=""></p>
+<p><strong>markdown具体语法知识点我会在以后的博客中进行整理更新，有需要的到时候可以关注一下</strong></p>
+<p>保存，然后依次执行下列步骤：</p>
+<p><img src="https://i.imgur.com/pSdIAgx.png" alt=""></p>
+<p>这时候，通过打开<a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a>，可以发现刚刚的文章已经上传到本地上了。</p>
+<h1 id="八、本地文件提交到GitHub"><a href="#八、本地文件提交到GitHub" class="headerlink" title="八、本地文件提交到GitHub"></a>八、本地文件提交到GitHub</h1><p>即使现在我们已经可以在本地上浏览到我们的博客了，但别人还不能浏览到我们刚刚发的博客，因为我们并还没有将文件上传到github上面，所以我们还要进行一步操作。这一步操作只需简单输入以下命令即可:</p>
+<blockquote>
+<p>// 删除旧的 public 文件</p>
+</blockquote>
+<blockquote>
+<p>hexo clean</p>
+<p>// 生成新的 public 文件</p>
+<p>hexo generate</p>
+<p>或者<br>hexo g</p>
+<p>// 开始部署</p>
+<p>hexo deploye</p>
+<p>或者</p>
+<p>hexo d</p>
+</blockquote>
+<p>如果没有错误产生，此时你本地的代码就已经上传到了Github中。</p>
+<p>如果在执行 hexo deploy 后,出现 <code>error deployer not found:github</code>的错误，执行：</p>
+<p><code>npm install hexo-deployer-git --save</code></p>
+<p>出错也是正常的，咱们只要动动手指上网查一查就能够解决我们遇到的问题，所以也不用着急。</p>
+<h1 id="九、关联-Hexo-与-GitHub-Pages"><a href="#九、关联-Hexo-与-GitHub-Pages" class="headerlink" title="九、关联 Hexo 与 GitHub Pages"></a>九、关联 Hexo 与 GitHub Pages</h1><p>代码库正确创建之后，并且已经将代码上传到了Github中，此时你将会看到如下界面：</p>
+<p><img src="https://i.imgur.com/zZmBvG3.png" alt=""></p>
+<p>接下来开启Github pages功能，点击界面右侧的Settings，你将会打开这个库的setting页面，向下拖动，直到看见GitHub Pages，如图：</p>
+<p><img src="https://i.imgur.com/7NQpiyP.png" alt=""></p>
+<p>在红框中选择已经上传的master branch代码。<br>保存之后，此时直接访问你之前创建New repository时所填的信息：yourname.github.io，就可以看到你的博客信息了，到了这一步，恭喜你，你的博客已经搭建完毕啦，别人也能够通过你的域名来直接访问你的博客，是不是很棒。。</p>
+<p>当然，如果你想要让你的博客外观看起来更漂亮些，你也可以自己弄个主题或者在网上找个博客主题装饰一下，那就更棒了。下面是一些博客主题下载地址与教程，喜欢的童鞋可以进去看看。</p>
+<p><a href="https://github.com/litten/hexo-theme-yilia" target="_blank" rel="noopener">https://github.com/litten/hexo-theme-yilia</a></p>
 
       
     </div>
@@ -764,7 +806,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是hexo"><span class="nav-number">1.</span> <span class="nav-text">什么是hexo?</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是github"><span class="nav-number">2.</span> <span class="nav-text">什么是github?</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#一、github的注册与配置"><span class="nav-number">3.</span> <span class="nav-text">一、github的注册与配置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#注册"><span class="nav-number">3.1.</span> <span class="nav-text">注册</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#配置"><span class="nav-number">3.2.</span> <span class="nav-text">配置</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二、安装Node-js和Git环境"><span class="nav-number">4.</span> <span class="nav-text">二、安装Node.js和Git环境</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Node-js安装"><span class="nav-number">4.1.</span> <span class="nav-text">Node.js安装</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#Node-js介绍"><span class="nav-number">4.1.0.1.</span> <span class="nav-text">Node.js介绍</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Git安装"><span class="nav-number">4.2.</span> <span class="nav-text">Git安装</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#Git介绍"><span class="nav-number">4.2.0.1.</span> <span class="nav-text">Git介绍</span></a></li></ol></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#三、安装配置-Hexo"><span class="nav-number"></span> <span class="nav-text">三、安装配置 Hexo</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#四、建立Hexo站点"><span class="nav-number"></span> <span class="nav-text">四、建立Hexo站点</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#五、与github建立联系"><span class="nav-number"></span> <span class="nav-text">五、与github建立联系</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#生成SSH-keys"><span class="nav-number">0.1.</span> <span class="nav-text">生成SSH keys</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#添加-SSH-Key-到-GitHub"><span class="nav-number">0.2.</span> <span class="nav-text">添加 SSH Key 到 GitHub</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#测试是否添加成功"><span class="nav-number">0.3.</span> <span class="nav-text">测试是否添加成功</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#六、配置博客"><span class="nav-number"></span> <span class="nav-text">六、配置博客</span></a></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是hexo"><span class="nav-number">1.</span> <span class="nav-text">什么是hexo?</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是github"><span class="nav-number">2.</span> <span class="nav-text">什么是github?</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#一、github的注册与配置"><span class="nav-number">3.</span> <span class="nav-text">一、github的注册与配置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#注册"><span class="nav-number">3.1.</span> <span class="nav-text">注册</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#配置"><span class="nav-number">3.2.</span> <span class="nav-text">配置</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二、安装Node-js和Git环境"><span class="nav-number">4.</span> <span class="nav-text">二、安装Node.js和Git环境</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Node-js安装"><span class="nav-number">4.1.</span> <span class="nav-text">Node.js安装</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#Node-js介绍"><span class="nav-number">4.1.0.1.</span> <span class="nav-text">Node.js介绍</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Git安装"><span class="nav-number">4.2.</span> <span class="nav-text">Git安装</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#Git介绍"><span class="nav-number">4.2.0.1.</span> <span class="nav-text">Git介绍</span></a></li></ol></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#三、安装配置-Hexo"><span class="nav-number"></span> <span class="nav-text">三、安装配置 Hexo</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#四、建立Hexo站点"><span class="nav-number"></span> <span class="nav-text">四、建立Hexo站点</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#五、与github建立联系"><span class="nav-number"></span> <span class="nav-text">五、与github建立联系</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#生成SSH-keys"><span class="nav-number">0.1.</span> <span class="nav-text">生成SSH keys</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#添加-SSH-Key-到-GitHub"><span class="nav-number">0.2.</span> <span class="nav-text">添加 SSH Key 到 GitHub</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#测试是否添加成功"><span class="nav-number">0.3.</span> <span class="nav-text">测试是否添加成功</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#六、配置博客"><span class="nav-number"></span> <span class="nav-text">六、配置博客</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#七、发表文章"><span class="nav-number"></span> <span class="nav-text">七、发表文章</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#八、本地文件提交到GitHub"><span class="nav-number"></span> <span class="nav-text">八、本地文件提交到GitHub</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#九、关联-Hexo-与-GitHub-Pages"><span class="nav-number"></span> <span class="nav-text">九、关联 Hexo 与 GitHub Pages</span></a></div>
             
 
           </div>
@@ -807,7 +849,7 @@
     
       <span class="post-meta-item-text">博客全站字数&#58;</span>
     
-    <span title="博客全站字数">1.9k</span>
+    <span title="博客全站字数">2.5k</span>
   
 </div>
 
