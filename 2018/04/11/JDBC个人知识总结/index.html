@@ -94,7 +94,7 @@
 <meta property="og:site_name" content="emadons的博客">
 <meta property="og:description" content="JDBC主要类库介绍接口 Driver 每个驱动程序类必须实现的接口。  Java SQL 框架允许多个数据库驱动程序。  每个驱动程序都应该提供一个实现 Driver 接口的类。 接口 Connection 与特定数据库的连接（会话）。在连接上下文中执行 SQL 语句并返回结果。  Connection 对象的数据库能够提供描述其表、所支持的 SQL 语法、存储过程、此连接功能等等的信息。此信息">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-04-12T08:49:45.698Z">
+<meta property="og:updated_time" content="2018-04-12T13:10:09.742Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JDBC个人知识总结">
 <meta name="twitter:description" content="JDBC主要类库介绍接口 Driver 每个驱动程序类必须实现的接口。  Java SQL 框架允许多个数据库驱动程序。  每个驱动程序都应该提供一个实现 Driver 接口的类。 接口 Connection 与特定数据库的连接（会话）。在连接上下文中执行 SQL 语句并返回结果。  Connection 对象的数据库能够提供描述其表、所支持的 SQL 语法、存储过程、此连接功能等等的信息。此信息">
@@ -531,7 +531,7 @@
 <ol>
 <li>获取数据库连接</li>
 <li>准备插入的 SQL 语句</li>
-<li>执行插入操作<ul>
+<li>执行SQL操作<ul>
 <li>获取操作 SQL 语句的 Statement 对象，调用 Connection 的 createStatement() 方法来获取。</li>
 <li>调用 Statement 对象的 executeUpdate(sql) 执行 SQL 语句。</li>
 </ul>
@@ -543,15 +543,15 @@
 <p><em>ResultSet: 结果集，封装了使用 JDBC 进行查询的结果</em></p>
 <p><strong>通过 JDBC 向指定的数据表中查询一条记录.</strong></p>
 <p>1.调用 Statement 对象的 executeQuery(sql) 可以得到结果集.</p>
-<p>2.ResultSet 返回的实际上就是一张数据表.有一个指针指向数据表的&gt;第一行的前面.可以调用 next() 方法检测下一行是否有效. 若有效该方&gt;法返回 true, 且指针下移. 相当于Iterator 对象的 hasNext() 和 &gt;next() 方法的结合体.</p>
+<p>2.ResultSet 返回的实际上就是一张数据表，有一个指针指向数据表的第一行的前面，可以调用 next() 方法检测下一行是否有效， 若有效，该方法返回 true, 且指针下移. 相当于Iterator 对象的 hasNext() 和 next() 方法的结合体.</p>
 <p>3.当指针指向一行时, 可以通过调用 getXXX(index) 或getXXX&gt;(columnName)获取每一列的值. 例如: getInt(1), getString(“name”)</p>
 <p>4.ResultSet 当然也需要进行关闭. </p>
 </blockquote>
 <p><strong>书写步骤：</strong></p>
 <ol>
 <li>获取数据库连接</li>
-<li>准备插入的 SQL 语句</li>
-<li>执行插入操作<ul>
+<li>准备查询的 SQL 语句</li>
+<li>执行SQL查询操作<ul>
 <li>获取操作 SQL 语句的 Statement 对象，调用 Connection 的 createStatement() 方法来获取。</li>
 <li>调用 Statement 对象的 executeQuery(sql) 执行 SQL 语句。</li>
 <li>处理 ResultSet。</li>
@@ -578,7 +578,7 @@
   <p><span>本文标题:</span><a href="/2018/04/11/JDBC个人知识总结/">JDBC个人知识总结</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 emadons 的个人博客">emadons</a></p>
   <p><span>发布时间:</span>2018年04月11日 - 23:04</p>
-  <p><span>最后更新:</span>2018年04月12日 - 16:04</p>
+  <p><span>最后更新:</span>2018年04月12日 - 21:04</p>
   <p><span>原始链接:</span><a href="/2018/04/11/JDBC个人知识总结/" title="JDBC个人知识总结">http://yoursite.com/2018/04/11/JDBC个人知识总结/</a>
     <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://yoursite.com/2018/04/11/JDBC个人知识总结/"  aria-label="复制成功！"></i></span>
   </p>
