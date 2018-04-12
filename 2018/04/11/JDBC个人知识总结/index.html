@@ -94,7 +94,7 @@
 <meta property="og:site_name" content="emadons的博客">
 <meta property="og:description" content="JDBC主要类库介绍接口 Driver 每个驱动程序类必须实现的接口。  Java SQL 框架允许多个数据库驱动程序。  每个驱动程序都应该提供一个实现 Driver 接口的类。 接口 Connection 与特定数据库的连接（会话）。在连接上下文中执行 SQL 语句并返回结果。  Connection 对象的数据库能够提供描述其表、所支持的 SQL 语法、存储过程、此连接功能等等的信息。此信息">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-04-12T08:46:27.093Z">
+<meta property="og:updated_time" content="2018-04-12T08:49:45.698Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JDBC个人知识总结">
 <meta name="twitter:description" content="JDBC主要类库介绍接口 Driver 每个驱动程序类必须实现的接口。  Java SQL 框架允许多个数据库驱动程序。  每个驱动程序都应该提供一个实现 Driver 接口的类。 接口 Connection 与特定数据库的连接（会话）。在连接上下文中执行 SQL 语句并返回结果。  Connection 对象的数据库能够提供描述其表、所支持的 SQL 语法、存储过程、此连接功能等等的信息。此信息">
@@ -486,11 +486,11 @@
 <hr>
 <blockquote>
 <p>DriverManager是驱动的管理类. </p>
-</blockquote>
 <ol>
 <li>可以通过重载的getConnection() 方法获取数据库连接. 较为方便。</li>
 <li>可以同时管理多个驱动程序: 若注册了多个数据库连接, 则调用 getConnection()方法时传入的参数不同, 即返回不同的数据库连接。</li>
 </ol>
+</blockquote>
 <p><strong>无反射机制连接数据库</strong></p>
 <ol>
 <li>准备连接数据库的 4 个字符串(驱动全类名，url，user，password)</li>
