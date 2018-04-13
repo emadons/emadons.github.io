@@ -94,7 +94,7 @@
 <meta property="og:site_name" content="emadons的博客">
 <meta property="og:description" content="JDBC主要类库介绍接口 Driver  每个驱动程序类必须实现的接口。   Java SQL 框架允许多个数据库驱动程序。   每个驱动程序都应该提供一个实现 Driver 接口的类。   接口 Connection  与特定数据库的连接（会话）。在连接上下文中执行 SQL 语句并返回结果。   Connection 对象的数据库能够提供描述其表、所支持的 SQL 语法、存储过程、此连接功能等等">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-04-13T14:40:46.196Z">
+<meta property="og:updated_time" content="2018-04-13T14:43:30.951Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JDBC个人知识总结">
 <meta name="twitter:description" content="JDBC主要类库介绍接口 Driver  每个驱动程序类必须实现的接口。   Java SQL 框架允许多个数据库驱动程序。   每个驱动程序都应该提供一个实现 Driver 接口的类。   接口 Connection  与特定数据库的连接（会话）。在连接上下文中执行 SQL 语句并返回结果。   Connection 对象的数据库能够提供描述其表、所支持的 SQL 语法、存储过程、此连接功能等等">
@@ -625,7 +625,7 @@
 <li>遍历Map对象，利用反射为clazz对应类的对象的属性赋值</li>
 <li>关闭数据库资源</li>
 </ol>
-<p>##SQL注入<br>SQL注入是利用某些系统没有对用户输入的数据进行充分的检查，而在用户输入数据中注入非法的SQL语句段或命令，从而利用系统的SQL引擎完成恶意行为的做法。</p>
+<h2 id="SQL注入"><a href="#SQL注入" class="headerlink" title="SQL注入"></a>SQL注入</h2><p>SQL注入是利用某些系统没有对用户输入的数据进行充分的检查，而在用户输入数据中注入非法的SQL语句段或命令，从而利用系统的SQL引擎完成恶意行为的做法。</p>
 <pre><code>示例：
 SELECT * FROM user WHERE username = &apos;a&apos; OR PASSWORD = &apos;AND password = &apos;OR&apos;1&apos;=&apos;1&apos;
 </code></pre><p><strong>对于 Java 而言，要防范 SQL 注入，只要用 PreparedStatement 取代 Statement 就可以了</strong></p>
@@ -891,7 +891,7 @@ SELECT * FROM user WHERE username = &apos;a&apos; OR PASSWORD = &apos;AND passwo
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#JDBC主要类库介绍"><span class="nav-number">1.</span> <span class="nav-text">JDBC主要类库介绍</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#JDBC数据库连接"><span class="nav-number">2.</span> <span class="nav-text">JDBC数据库连接</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#JDBC执行SQL操作与数据库资源的关闭"><span class="nav-number">3.</span> <span class="nav-text">JDBC执行SQL操作与数据库资源的关闭</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#通用的查询方法"><span class="nav-number">4.</span> <span class="nav-text">通用的查询方法</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#JDBC主要类库介绍"><span class="nav-number">1.</span> <span class="nav-text">JDBC主要类库介绍</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#JDBC数据库连接"><span class="nav-number">2.</span> <span class="nav-text">JDBC数据库连接</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#JDBC执行SQL操作与数据库资源的关闭"><span class="nav-number">3.</span> <span class="nav-text">JDBC执行SQL操作与数据库资源的关闭</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#通用的查询方法"><span class="nav-number">4.</span> <span class="nav-text">通用的查询方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#SQL注入"><span class="nav-number">5.</span> <span class="nav-text">SQL注入</span></a></li></ol></div>
             
 
           </div>
