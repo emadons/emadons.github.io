@@ -86,18 +86,18 @@
 
 
 
-<meta name="description" content="JDBC主要类库介绍接口 Driver 每个驱动程序类必须实现的接口。  Java SQL 框架允许多个数据库驱动程序。  每个驱动程序都应该提供一个实现 Driver 接口的类。 接口 Connection 与特定数据库的连接（会话）。在连接上下文中执行 SQL 语句并返回结果。  Connection 对象的数据库能够提供描述其表、所支持的 SQL 语法、存储过程、此连接功能等等的信息。此信息">
+<meta name="description" content="JDBC主要类库介绍接口 Driver  每个驱动程序类必须实现的接口。   Java SQL 框架允许多个数据库驱动程序。   每个驱动程序都应该提供一个实现 Driver 接口的类。   接口 Connection  与特定数据库的连接（会话）。在连接上下文中执行 SQL 语句并返回结果。   Connection 对象的数据库能够提供描述其表、所支持的 SQL 语法、存储过程、此连接功能等等">
 <meta name="keywords" content="java,JDBC,数据库">
 <meta property="og:type" content="article">
 <meta property="og:title" content="JDBC个人知识总结">
 <meta property="og:url" content="http://yoursite.com/2018/04/11/JDBC个人知识总结/index.html">
 <meta property="og:site_name" content="emadons的博客">
-<meta property="og:description" content="JDBC主要类库介绍接口 Driver 每个驱动程序类必须实现的接口。  Java SQL 框架允许多个数据库驱动程序。  每个驱动程序都应该提供一个实现 Driver 接口的类。 接口 Connection 与特定数据库的连接（会话）。在连接上下文中执行 SQL 语句并返回结果。  Connection 对象的数据库能够提供描述其表、所支持的 SQL 语法、存储过程、此连接功能等等的信息。此信息">
+<meta property="og:description" content="JDBC主要类库介绍接口 Driver  每个驱动程序类必须实现的接口。   Java SQL 框架允许多个数据库驱动程序。   每个驱动程序都应该提供一个实现 Driver 接口的类。   接口 Connection  与特定数据库的连接（会话）。在连接上下文中执行 SQL 语句并返回结果。   Connection 对象的数据库能够提供描述其表、所支持的 SQL 语法、存储过程、此连接功能等等">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-04-12T13:10:09.742Z">
+<meta property="og:updated_time" content="2018-04-13T14:40:46.196Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JDBC个人知识总结">
-<meta name="twitter:description" content="JDBC主要类库介绍接口 Driver 每个驱动程序类必须实现的接口。  Java SQL 框架允许多个数据库驱动程序。  每个驱动程序都应该提供一个实现 Driver 接口的类。 接口 Connection 与特定数据库的连接（会话）。在连接上下文中执行 SQL 语句并返回结果。  Connection 对象的数据库能够提供描述其表、所支持的 SQL 语法、存储过程、此连接功能等等的信息。此信息">
+<meta name="twitter:description" content="JDBC主要类库介绍接口 Driver  每个驱动程序类必须实现的接口。   Java SQL 框架允许多个数据库驱动程序。   每个驱动程序都应该提供一个实现 Driver 接口的类。   接口 Connection  与特定数据库的连接（会话）。在连接上下文中执行 SQL 语句并返回结果。   Connection 对象的数据库能够提供描述其表、所支持的 SQL 语法、存储过程、此连接功能等等">
 
 
 
@@ -410,7 +410,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  1,277 字
+                  1,963 字
                 </span>
               
 
@@ -426,7 +426,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  5 分钟
+                  7 分钟
                 </span>
               
             </div>
@@ -448,15 +448,65 @@
 
       
         <h2 id="JDBC主要类库介绍"><a href="#JDBC主要类库介绍" class="headerlink" title="JDBC主要类库介绍"></a>JDBC主要类库介绍</h2><p><strong>接口 Driver</strong></p>
-<p>每个驱动程序类必须实现的接口。 </p>
-<p>Java SQL 框架允许多个数据库驱动程序。 </p>
-<p>每个驱动程序都应该提供一个实现 Driver 接口的类。</p>
+<ul>
+<li><p>每个驱动程序类必须实现的接口。 </p>
+</li>
+<li><p>Java SQL 框架允许多个数据库驱动程序。 </p>
+</li>
+<li><p>每个驱动程序都应该提供一个实现 Driver 接口的类。</p>
+</li>
+</ul>
 <p><strong>接口 Connection</strong></p>
-<p>与特定数据库的连接（会话）。在连接上下文中执行 SQL 语句并返回结果。 </p>
-<p>Connection 对象的数据库能够提供描述其表、所支持的 SQL 语法、存储过程、此连接功能等等的信息。此信息是使用 getMetaData 方法获得的。<br><a id="more"></a><br><strong>类 DriverManager</strong></p>
-<p>管理一组 JDBC 驱动程序的基本服务。</p>
+<ul>
+<li><p>与特定数据库的连接（会话）。在连接上下文中执行 SQL 语句并返回结果。 </p>
+</li>
+<li><p>Connection 对象的数据库能够提供描述其表、所支持的 SQL 语法、存储过程、此连接功能等等的信息。此信息是使用 getMetaData 方法获得的。 </p>
+<a id="more"></a> 
+<p><strong>类 DriverManager</strong></p>
+</li>
+<li><p>管理一组 JDBC 驱动程序的基本服务。</p>
+</li>
+</ul>
 <p><strong>接口 Statement</strong></p>
-<p>用于执行静态 SQL 语句并返回它所生成结果的对象。</p>
+<p>  用于执行静态 SQL 语句并返回它所生成结果的对象。</p>
+<pre><code>注：
+
+1. 使用 Statement 需要进行拼写SQL语句，比较麻烦，而且容易出错。
+
+2. 使用Statement可用会发生SQL注入。
+
+3. 建议使用PreparedStatement，可防止SQL注入。
+
+4. PreparedStatement 能最大可能提高性能。
+</code></pre><p><strong>接口 PreparedStatement</strong></p>
+<ul>
+<li><p>表示预编译的 SQL 语句的对象。</p>
+</li>
+<li><p>PreparedStatement 接口是 Statement 的子接口，它表示一条预编译过的 SQL 语句。 </p>
+</li>
+<li><p>可以通过调用 Connection 对象的 preparedStatement() 方法获取 PreparedStatement 对象。</p>
+</li>
+<li><p>PreparedStatement 对象所代表的 SQL 语句中的参数用问号(?)来表示，调用PreparedStatement 对象的 setXXX() 方法来设置这些参数. setXXX() 方法有两个参数，第一个参数是要设置的 SQL 语句中的参数的索引(从 1 开始)，第二个是设置的 SQL 语句中的参数的值。</p>
+</li>
+</ul>
+<p><strong>接口ResultSet</strong></p>
+<ul>
+<li><p>通过调用 Statement 对象的 excuteQuery() 方法创建该对象。</p>
+</li>
+<li><p>ResultSet 对象以逻辑表格的形式封装了执行数据库操作的结果集， - ResultSet 接口由数据库厂商实现</p>
+</li>
+<li>ResultSet 对象维护了一个指向当前数据行的游标，初始的时候，游标在第一行之前，可以通过 ResultSet 对象的 next() 方法移动到下一行</li>
+</ul>
+<p><strong>接口 ResultSetMetaData</strong></p>
+<ul>
+<li><p>可用于获取关于 ResultSet 对象中列的类型和属性信息的对象。</p>
+<p> <em>应用： 编写通用的查询方法时需要使用。</em><br> <code>public &lt;T&gt; T get(Class&lt;T&gt; clazz, String sql, Object... args)</code></p>
+</li>
+<li><p>常用方法：</p>
+<p> int getColumnCount() : 返回此 ResultSet 对象中的列数。</p>
+<p> String getColumnLabel(int column) : 获取指定的列的别名，其中索引从1开始。</p>
+</li>
+</ul>
 <h2 id="JDBC数据库连接"><a href="#JDBC数据库连接" class="headerlink" title="JDBC数据库连接"></a>JDBC数据库连接</h2><blockquote>
 <p>Driver 是一个接口: 数据库厂商必须提供实现的接口. 能从其中获取数据库连接。可以通过 Driver 的实现类对象获取数据库连接。</p>
 </blockquote>
@@ -559,6 +609,26 @@
 </li>
 <li>关闭数据库资源，由里向外关闭。</li>
 </ol>
+<hr>
+<h2 id="通用的查询方法"><a href="#通用的查询方法" class="headerlink" title="通用的查询方法"></a>通用的查询方法</h2><p> <em>实现该方法需要综合使用反射，JDBC，以及JDBC元数据知识。</em></p>
+<p><code>public &lt;T&gt; T get(Class&lt;T&gt; clazz, String sql, Object... args)</code></p>
+<p><strong>书写步骤：</strong></p>
+<ol>
+<li>获取数据库连接</li>
+<li>调用connnection的prepareStatement(sql)方法将参数化的 SQL 语句发送到数据库。</li>
+<li>填充占位符的可变参数</li>
+<li>得到ResultSet对象</li>
+<li>得到ResultSetMetaData对象</li>
+<li>创建一个Map&lt;String,Object&gt;对象，键：SQL查询的列的别名 值：查询列的值</li>
+<li>处理结果集，利用ResultSetMetaData填充3对应的Map对象</li>
+<li>若Map不为空集，利用反射创建clazz对应类的对象</li>
+<li>遍历Map对象，利用反射为clazz对应类的对象的属性赋值</li>
+<li>关闭数据库资源</li>
+</ol>
+<p>##SQL注入<br>SQL注入是利用某些系统没有对用户输入的数据进行充分的检查，而在用户输入数据中注入非法的SQL语句段或命令，从而利用系统的SQL引擎完成恶意行为的做法。</p>
+<pre><code>示例：
+SELECT * FROM user WHERE username = &apos;a&apos; OR PASSWORD = &apos;AND password = &apos;OR&apos;1&apos;=&apos;1&apos;
+</code></pre><p><strong>对于 Java 而言，要防范 SQL 注入，只要用 PreparedStatement 取代 Statement 就可以了</strong></p>
 
       
     </div>
@@ -578,7 +648,7 @@
   <p><span>本文标题:</span><a href="/2018/04/11/JDBC个人知识总结/">JDBC个人知识总结</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 emadons 的个人博客">emadons</a></p>
   <p><span>发布时间:</span>2018年04月11日 - 23:04</p>
-  <p><span>最后更新:</span>2018年04月12日 - 21:04</p>
+  <p><span>最后更新:</span>2018年04月13日 - 22:04</p>
   <p><span>原始链接:</span><a href="/2018/04/11/JDBC个人知识总结/" title="JDBC个人知识总结">http://yoursite.com/2018/04/11/JDBC个人知识总结/</a>
     <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://yoursite.com/2018/04/11/JDBC个人知识总结/"  aria-label="复制成功！"></i></span>
   </p>
@@ -821,7 +891,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#JDBC主要类库介绍"><span class="nav-number">1.</span> <span class="nav-text">JDBC主要类库介绍</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#JDBC数据库连接"><span class="nav-number">2.</span> <span class="nav-text">JDBC数据库连接</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#JDBC执行SQL操作与数据库资源的关闭"><span class="nav-number">3.</span> <span class="nav-text">JDBC执行SQL操作与数据库资源的关闭</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#JDBC主要类库介绍"><span class="nav-number">1.</span> <span class="nav-text">JDBC主要类库介绍</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#JDBC数据库连接"><span class="nav-number">2.</span> <span class="nav-text">JDBC数据库连接</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#JDBC执行SQL操作与数据库资源的关闭"><span class="nav-number">3.</span> <span class="nav-text">JDBC执行SQL操作与数据库资源的关闭</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#通用的查询方法"><span class="nav-number">4.</span> <span class="nav-text">通用的查询方法</span></a></li></ol></div>
             
 
           </div>
@@ -864,7 +934,7 @@
     
       <span class="post-meta-item-text">博客全站字数&#58;</span>
     
-    <span title="博客全站字数">3.8k</span>
+    <span title="博客全站字数">4.5k</span>
   
 </div>
 
